@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class AddGroupRefToGroupEntity < ActiveRecord::Migration[5.2]
+class AddGroupRefToGroupEntity < ActiveRecord::Migration[6.1]
   def change
     add_reference :group_entities, :group, foreign_key: true
   end

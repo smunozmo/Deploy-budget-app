@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class AddUserRefToGroup < ActiveRecord::Migration[5.2]
+class AddUserRefToGroup < ActiveRecord::Migration[6.1]
   def change
     add_reference :groups, :user, foreign_key: true
   end

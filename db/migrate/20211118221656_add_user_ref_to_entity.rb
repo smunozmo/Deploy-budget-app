@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class AddUserRefToEntity < ActiveRecord::Migration[5.2]
+class AddUserRefToEntity < ActiveRecord::Migration[6.1]
   def change
     add_reference :entities, :user, foreign_key: true
   end

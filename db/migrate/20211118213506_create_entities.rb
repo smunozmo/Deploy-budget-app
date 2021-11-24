@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class CreateEntities < ActiveRecord::Migration[5.2]
+class CreateEntities < ActiveRecord::Migration[6.1]
   def change
     create_table :entities do |t|
       t.string :name
